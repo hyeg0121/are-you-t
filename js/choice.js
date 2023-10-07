@@ -122,6 +122,11 @@ cDiv[1].onclick = () => {
 };
 
 function next() {
+    indexLable.innerHTML = (index + 1) + ' / 10'
+    qDiv.innerHTML = qList[index];
+    cDiv[0].innerHTML = cList[index][0];
+    cDiv[1].innerHTML = cList[index][1];
+
     console.log(score);
     indexLable.innerHTML = (index + 1) + ' / 10'
     cContainer.style.display = 'none';
