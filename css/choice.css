@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #0048A8;
+    --text-color: #fff;
+    --main-font: 'Cafe24Supermagic-Bold-v1.0';
+    --main-weight: 500;
+    --sub-font: 'TheJamsil5Bold';
+}
+
+#index {
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 2rem;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;    
+    gap: 10vh;
+    height: 100%;
+}
+
+#q-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 25vh;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+
+#c-container {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.c-div:hover{
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 10vh;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    font-size: 2rem;
+    color: #fff;
+    font-family: var(--main-font);
+    transition: 0.4s;
+}
+
+
+.c-div {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 10vh;
+    background-color: var(--sub-color);
+    border-radius: 20px;
+    color: var(--main-color);
+    border: 3px solid;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    border-color: var(--main-color);
+    cursor: pointer;
+
+    animation: vibrationLeft .3s infinite;
+}
+
+.c-div:nth-child(2) {
+    animation: vibrationRight .3s infinite;
+}
+@keyframes vibrationLeft {
+    from {
+      transform: rotate(-0.2deg)
+    }
+    to {
+      transform: rotate(0.2deg);
+    }
+}
+
+@keyframes vibrationRight {
+    from {
+      transform: rotate(0.2deg)
+    }
+    to {
+      transform: rotate(-0.2deg);
+    }
+}
