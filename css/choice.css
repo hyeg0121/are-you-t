@@ -30,6 +30,7 @@
 }
 
 #main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -42,12 +43,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     height: 25vh;
-    background-color: var(--main-color);
     border-radius: 20px;
     text-align: center;
-    color: var(--text-color);
+    color: var(--main-color);
     font-size: 3.3rem;
     text-align: center;
     font-family: var(--main-font);
@@ -65,25 +65,11 @@
     gap: 30px;
 }
 
-.c-div:hover{
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 10vh;
-    background-color: var(--main-color);
-    border-radius: 20px;
-    font-size: 2rem;
-    color: #fff;
-    font-family: var(--main-font);
-    transition: 0.4s;
-}
-
-
 .c-div {
     display: none;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 50%;
     height: 10vh;
     background-color: var(--sub-color);
     border-radius: 20px;
@@ -93,7 +79,7 @@
     font-size: 2rem;
     border-color: var(--main-color);
     cursor: pointer;
-
+    text-align: center;
     animation: vibrationLeft .3s infinite;
 }
 
