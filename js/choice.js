@@ -91,14 +91,11 @@ cDiv[0].onclick = () => {
     } else {
         shuffle(fBgmList)[1].play();
     }
-    
-    setTimeout(()=>{
-        if (index === cList.length) {
-            window.open(`result.html?score=${score}`, '_top');
-        } else {
-            next();
-        }
-    }, 1000);
+    if (index === cList.length) {
+        window.open(`result.html?score=${score}`, '_top');
+    } else {
+        next();
+    }
 };
 
 cDiv[1].onclick = () => {
@@ -110,14 +107,12 @@ cDiv[1].onclick = () => {
     } else {
         shuffle(fBgmList)[1].play();
     }
-    
-    setTimeout(()=>{
-        if (index === cList.length) {
-            window.open(`result.html?score=${score}`, '_top');
-        } else {
-            next();
-        }
-    }, 1000);
+
+    if (index === cList.length) {
+        window.open(`result.html?score=${score}`, '_top');
+    } else {
+        next();
+    }
     
 };
 
